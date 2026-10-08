@@ -6,7 +6,4 @@ En el restaurante hay dos modos, en usuario normal y en usuario de administrador
 
 Para utilizarse este programa, se necesita tener instalado XAMPP y MySQL, y también añadir las bases de datos y tablas dentro del archivo de tipo .sql que esta en este repositorio.
 
-
-
-
-
+<img src="/imagenes/screenshot.png" alt="alt text" />
