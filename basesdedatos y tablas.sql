@@ -1,0 +1,52 @@
+CREATE DATABASE IF NOT EXISTS bd_4b_eq04
+  CHARACTER SET utf8mb4
+  COLLATE utf8mb4_unicode_ci;
+
+USE bd_4b_eq04;
+
+CREATE TABLE IF NOT EXISTS usuarios (
+  Id INT(11) NOT NULL AUTO_INCREMENT,
+  username VARCHAR(100) NOT NULL,
+  password VARCHAR(255) NOT NULL,
+  Email VARCHAR(150) NOT NULL,
+  PRIMARY KEY (Id),
+  UNIQUE KEY uq_usuarios_username (username),
+  UNIQUE KEY uq_usuarios_email (Email)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS usuariosr (
+  Id INT(11) NOT NULL AUTO_INCREMENT,
+  username VARCHAR(100) NOT NULL,
+  password VARCHAR(255) NOT NULL,
+  Email VARCHAR(150) NOT NULL,
+  PRIMARY KEY (Id),
+  UNIQUE KEY uq_usuariosr_username (username),
+  UNIQUE KEY uq_usuariosr_email (Email)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS menu (
+  Id INT(11) NOT NULL AUTO_INCREMENT,
+  Categoria VARCHAR(50) NOT NULL,
+  Nombre VARCHAR(150) NOT NULL,
+  Descripcion TEXT,
+  Precio DECIMAL(10,2) NOT NULL DEFAULT 0.00,
+  Imagen VARCHAR(255) DEFAULT NULL,
+  PRIMARY KEY (Id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+CREATE DATABASE IF NOT EXISTS usuariosr
+  CHARACTER SET utf8mb4
+  COLLATE utf8mb4_unicode_ci;
+
+USE usuariosr;
+
+CREATE TABLE IF NOT EXISTS usuarios (
+  Id INT(11) NOT NULL AUTO_INCREMENT,
+  username VARCHAR(100) NOT NULL,
+  password VARCHAR(255) NOT NULL,
+  Email VARCHAR(150) NOT NULL,
+  PRIMARY KEY (Id),
+  UNIQUE KEY uq_usuarios_username (username),
+  UNIQUE KEY uq_usuarios_email (Email)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
