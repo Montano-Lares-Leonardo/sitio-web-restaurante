@@ -1,0 +1,24 @@
+table{
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+td{
+	border: 1px solid black;
+	padding: 10px;
+}
+h1{
+	margin: 0 auto;
+	text-align: center;
+	text-shadow: black;
+}
+.AP{
+	display: none;
+}
+#Altura{
+	display: none;
+}
+#Base{
+	display: none;
+}
